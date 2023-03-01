@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Les 25</title>
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#button").click(function(){
+                var Naam = $("#text1").val();
+                var Achternaam = $("#text2").val();
+                var Emailadres = $("#text3").val();
+                var Uwbericht = $("#text4").val();
+                window.alert("Hallo mijn naam is" + Naam + "en mijn achternaam is" + Achternaam + "mijn email adres is" + Emailadres + "Ik wil zeggen dat" + Uwbericht);
+            });
+        });
+</script>
+</head>
+<body>
+    
+    <form class="form">
+        <h1 class="formulier">Formulier</h1>
+        Naam<strong>*</strong>
+        <input type="text" id="text1" class="text1" required><br><br>
+        Achternaam<strong>*</strong>
+        <input type="text" id="text2" class="text2" required><br><br>
+        Email adres<strong>*</strong>
+        <input type="text" id="text3" class="text3" required><br><br>
+        Uw bericht
+        <input type="text" id="text4" class="text4"> <br><br>
+        <input id="button" name="button" type="button" class="Verzend" value="Verzend">
+    </form>
+</body>
+</html>
